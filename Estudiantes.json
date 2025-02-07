@@ -1,0 +1,92 @@
+{
+    "estudiantes":[{
+        "# de identificacion": "102384762902",
+        "Nombres": "Juan Carlos",
+        "Apellidos": "Rodriguez Perez",
+        "Direccion": "Av. 50 #34-21",
+        "Acudiente": "Maria Cristina Rodriguez Lopez",
+        "Telefono de contacto (celular y fijo)": "3126547891",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "298573640928",
+        "Nombres": "Andrea Lucia",
+        "Apellidos": "Martinez Fernandez",
+        "Direccion": "Cra 15 #7-50",
+        "Acudiente": "Luis Fernando Martinez Ruiz",
+        "Telefono de contacto (celular y fijo)": "3057891234",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "573849102758",
+        "Nombres": "Miguel Angel",
+        "Apellidos": "Castillo Soto",
+        "Direccion": "Calle 19 #8-45",
+        "Acudiente": "Raul Castillo Mendez",
+        "Telefono de contacto (celular y fijo)": "3112349876",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "987654321098",
+        "Nombres": "Lucia Mariana",
+        "Apellidos": "Gonzalez Torres",
+        "Direccion": "Cl 30 #15-35",
+        "Acudiente": "Carlos Alberto Gonzalez Pineda",
+        "Telefono de contacto (celular y fijo)": "3145678910",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "294875639102",
+        "Nombres": "Carlos Eduardo",
+        "Apellidos": "Hernandez Ruiz",
+        "Direccion": "Carrera 20 #10-60",
+        "Acudiente": "Laura Hernandez Gutiérrez",
+        "Telefono de contacto (celular y fijo)": "3104328765",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "172839203848",
+        "Nombres": "Patricia Alejandra",
+        "Apellidos": "Rios Gómez",
+        "Direccion": "Cl 22 #13-70",
+        "Acudiente": "Elena Gómez Perez",
+        "Telefono de contacto (celular y fijo)": "3007864532",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "658473920384",
+        "Nombres": "Sebastian Alejandro",
+        "Apellidos": "Lopez Vargas",
+        "Direccion": "Av. 16 #25-90",
+        "Acudiente": "Sonia Lopez Hernandez",
+        "Telefono de contacto (celular y fijo)": "3128934675",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "394850203948",
+        "Nombres": "Isabella Maria",
+        "Apellidos": "Perez Mendoza",
+        "Direccion": "Calle 5 #8-40",
+        "Acudiente": "Marcos Perez Torres",
+        "Telefono de contacto (celular y fijo)": "3165468792",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "850239487521",
+        "Nombres": "Diego Fernando",
+        "Apellidos": "Salazar Rivera",
+        "Direccion": "Cra 12 #6-72",
+        "Acudiente": "Felipe Salazar Martínez",
+        "Telefono de contacto (celular y fijo)": "3009123456",
+        "Rol": "En proceso de ingreso"
+    },
+    {
+        "# de identificacion": "748593021756",
+        "Nombres": "Monica Alejandra",
+        "Apellidos": "Serrano Lopez",
+        "Direccion": "Cl 4 #9-55",
+        "Acudiente": "Alba Serrano Jiménez",
+        "Telefono de contacto (celular y fijo)": "3142345678",
+        "Rol": "En proceso de ingreso"
+    }]
+}
