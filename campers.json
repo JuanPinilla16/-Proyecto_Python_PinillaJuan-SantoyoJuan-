@@ -1,0 +1,114 @@
+{
+    "estudiantes": [
+        {
+            "ID": "1023",
+            "Nombres": "Juan Carlos",
+            "Apellidos": "Rodriguez Perez",
+            "Direccion": "Av. 50 #34-21",
+            "Acudiente": "Maria Cristina Rodriguez Lopez",
+            "Telefono": "3126547891",
+            "Estado": "En proceso de ingreso",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "2023",
+            "Nombres": "Andrea Fernanda",
+            "Apellidos": "Gomez Torres",
+            "Direccion": "Calle 12 #45-67",
+            "Acudiente": "Luis Alberto Gomez Diaz",
+            "Telefono": "3167894523",
+            "Estado": "Inscrito",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "3023",
+            "Nombres": "Carlos Alberto",
+            "Apellidos": "Mendoza Suarez",
+            "Direccion": "Carrera 30 #23-11",
+            "Acudiente": "Juana Maria Suarez Rojas",
+            "Telefono": "3206549872",
+            "Estado": "Aprobado",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "4023",
+            "Nombres": "Luis Enrique",
+            "Apellidos": "Fernandez Castro",
+            "Direccion": "Diagonal 14 #10-22",
+            "Acudiente": "Pedro Luis Fernandez Orozco",
+            "Telefono": "3114578932",
+            "Estado": "Cursando",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "5023",
+            "Nombres": "Maria Camila",
+            "Apellidos": "Lopez Vargas",
+            "Direccion": "Av. Principal #90-15",
+            "Acudiente": "Carlos Manuel Lopez Torres",
+            "Telefono": "3157896541",
+            "Estado": "Graduado",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "6023",
+            "Nombres": "Jorge Esteban",
+            "Apellidos": "Ruiz Martinez",
+            "Direccion": "Calle 88 #12-45",
+            "Acudiente": "Sandra Beatriz Martinez Gomez",
+            "Telefono": "3178529634",
+            "Estado": "Expulsado",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "7023",
+            "Nombres": "Sofia Alejandra",
+            "Apellidos": "Ramirez Torres",
+            "Direccion": "Carrera 19 #56-78",
+            "Acudiente": "Fernando Ramirez Quintero",
+            "Telefono": "3184561237",
+            "Estado": "Retirado",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "8023",
+            "Nombres": "Diego Armando",
+            "Apellidos": "Gonzalez Pardo",
+            "Direccion": "Calle 33 #14-90",
+            "Acudiente": "Paula Andrea Pardo Leon",
+            "Telefono": "3107896542",
+            "Estado": "En proceso de ingreso",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "9023",
+            "Nombres": "Ana Lucia",
+            "Apellidos": "Castro Herrera",
+            "Direccion": "Avenida Sur #21-67",
+            "Acudiente": "Javier Alejandro Castro Muñoz",
+            "Telefono": "3196541238",
+            "Estado": "Inscrito",
+            "Ruta": "",
+            "Salon": ""
+        },
+        {
+            "ID": "1002",
+            "Nombres": "Mateo Julian",
+            "Apellidos": "Vargas Rios",
+            "Direccion": "Transversal 5 #67-34",
+            "Acudiente": "Veronica Natalia Rios Cruz",
+            "Telefono": "3127894561",
+            "Estado": "Aprobado",
+            "Ruta": "",
+            "Salon": ""
+        }
+    ]
+}

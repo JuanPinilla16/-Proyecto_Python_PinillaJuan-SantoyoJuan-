@@ -1,0 +1,11 @@
+{
+    "Trainers":[{
+        "nameTrainer1": "Pedro Gomez",
+        "specialty": ""},
+
+        {"nameTrainer2": "Juan Perez",
+        "specialty": ""},
+        
+        {"nameTrainer3": "Maria Rodriguez",
+        "specialty": ""}]
+}

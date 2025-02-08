@@ -1,22 +1,22 @@
 {
     "Salones":[
         {"Artemis":[{
-            "Horario1": "En uso",
-            "Horario2": "En uso",
-            "Horario3": "Disponible",
-            "Horario4": "Disponible"}],
+            "Horario1": "",
+            "Horario2": "",
+            "Horario3": "",
+            "Horario4": ""}],
             
         "Sputnik":[{
-            "Horario1":"En uso",
-            "Horario2":"En uso",
-            "Horario3": "En uso",
-            "Horario4": "En uso"}],
+            "Horario1":"",
+            "Horario2":"",
+            "Horario3": "",
+            "Horario4": ""}],
 
         "Apollo": [{
-            "Horario1": "Disponible",
-            "Horario2": "Disponible",
-            "Horario3": "En uso",
-            "Horario4":"En uso"
+            "Horario1": "",
+            "Horario2": "",
+            "Horario3": "",
+            "Horario4":""
         }] 
     }]
 }
