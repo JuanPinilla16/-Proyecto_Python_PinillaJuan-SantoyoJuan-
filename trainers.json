@@ -1,1 +1,16 @@
-{"trainers": [{"ID": "1234", "Nombres": "Pedro ", "Apellidos": "Gomez", "Ruta": "Java"}, {"ID": "4321", "Nombres": "Ambar Isabella", "Apellidos": "Plata Lopez", "Ruta": "NodeJS"}]}
+{
+    "trainers": [
+        {
+            "ID": "1234",
+            "Nombres": "Pedro ",
+            "Apellidos": "Gomez",
+            "Ruta": "Java"
+        },
+        {
+            "ID": "4321",
+            "Nombres": "Ambar Isabella",
+            "Apellidos": "Plata Lopez",
+            "Ruta": "NodeJS"
+        }
+    ]
+}
