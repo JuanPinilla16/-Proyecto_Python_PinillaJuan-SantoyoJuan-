@@ -7,8 +7,8 @@
             "Horario4": ""}],
             
         "Sputnik":[{
-            "Horario1":"",
-            "Horario2":"",
+            "Horario1": "",
+            "Horario2": "",
             "Horario3": "",
             "Horario4": ""}],
 
@@ -16,7 +16,7 @@
             "Horario1": "",
             "Horario2": "",
             "Horario3": "",
-            "Horario4":""
+            "Horario4": ""
         }] 
     }]
 }

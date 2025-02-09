@@ -109,6 +109,17 @@
             "Estado": "Aprobado",
             "Ruta": "",
             "Salon": ""
+        },
+        {
+            "ID": "1234",
+            "Nombres": "Juan David",
+            "Apellidos": "Santoyo Jaimes",
+            "Direccion": "cl 7 #10",
+            "Acudiente": "Alba",
+            "Telefono": "3204496489",
+            "Estado": "Cursando",
+            "Ruta": "Java",
+            "Salon": "Artemis"
         }
     ]
 }
