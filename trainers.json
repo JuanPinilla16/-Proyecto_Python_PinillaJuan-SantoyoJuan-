@@ -11,6 +11,12 @@
             "Nombres": "Ambar Isabella",
             "Apellidos": "Plata Lopez",
             "Ruta": "NodeJS"
+        },
+        {
+            "ID": "7913",
+            "Nombres": "Carlos Julio",
+            "Apellidos": "Santoyo Pinilla",
+            "Ruta": "NetCore"
         }
     ]
 }
