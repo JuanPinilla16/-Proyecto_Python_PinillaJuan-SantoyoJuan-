@@ -40,6 +40,7 @@ def agregarEstudiante(estudiantes):
         "Telefono": input("Ingrese el teléfono del estudiante: "),
         "Estado": input("Ingrese el estado del estudiante ((En proceso de ingreso, Inscrito, Aprobado,Cursando, Graduado, Expulsado, Retirado): "),
         "Ruta": input("Ingrese la ruta del estudiante: "),
+        "Grupo": input("Ingrese el grupo del estudiante(A,B,C)"),
         "Disponibilidad": input("Ingrese la disponibilidad del estudiante (Mañana, Tarde): ")
     }
     estudiantes["estudiantes"].append(nuevo_camper)
@@ -156,6 +157,7 @@ while inicio:
                 print("Telefono:",Estudiantes["estudiantes"][i]["Telefono"])
                 print("Estado:",Estudiantes["estudiantes"][i]["Estado"])
                 print("Ruta:",Estudiantes["estudiantes"][i]["Ruta"])
+                print("Grupo:",Estudiantes["estudiantes"][i]["Grupo"])
                 print("Disponibilidad:",Estudiantes["estudiantes"][i]["Disponibilidad"])
         elif opcion==2:
             verSalones(Salones)
@@ -200,6 +202,7 @@ while inicio:
                 print("Telefono:",Estudiantes["estudiantes"][i]["Telefono"])
                 print("Estado:",Estudiantes["estudiantes"][i]["Estado"])
                 print("Ruta:",Estudiantes["estudiantes"][i]["Ruta"])
+                print("Grupo:",Estudiantes["estudiantes"][i]["Grupo"])
                 print("Disponibilidad:",Estudiantes["estudiantes"][i]["Disponibilidad"])
         elif opcion==2:
             for i in range(len(Trainers["trainers"])):
