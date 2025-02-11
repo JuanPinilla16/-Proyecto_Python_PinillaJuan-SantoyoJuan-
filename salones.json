@@ -3,8 +3,8 @@
         {
             "Nombre": "Artemis",
             "Horario": "Ma\u00c3\u00b1ana",
-            "Estudiantes": [],
-            "Ruta": "RutaJava",
+            "Grupo": [],
+            "Ruta": "Java",
             "Skills": [
                 "Intro",
                 "Python",
@@ -18,13 +18,14 @@
                 "Java",
                 "PostgreSQL",
                 "SpringBoot"
-            ]
+            ],
+            "Trainer": {}
         },
         {
             "Nombre": "Sputnik",
             "Horario": "Tarde",
-            "Estudiantes": [],
-            "Ruta": "RutaNodeJS",
+            "Grupo": [],
+            "Ruta": "NodeJS",
             "Skills": [
                 "Intro",
                 "Python",
@@ -38,13 +39,14 @@
                 "JavaScript",
                 "MySQL",
                 "Express"
-            ]
+            ],
+            "Trainer": {}
         },
         {
             "Nombre": "Apollo",
             "Horario": "Ma\u00c3\u00b1ana",
-            "Estudiantes": [],
-            "Ruta": "Ruta.NET",
+            "Grupo": [],
+            "Ruta": "NetCore",
             "Skills": [
                 "Intro",
                 "Python",
@@ -58,7 +60,8 @@
                 "C#",
                 "PostgreSQL",
                 ".NET Core"
-            ]
+            ],
+            "Trainer": {}
         }
     ]
 }
