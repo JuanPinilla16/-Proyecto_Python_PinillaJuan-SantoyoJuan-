@@ -2,8 +2,21 @@
     "Salones": [
         {
             "Nombre": "Artemis",
-            "Horario": "Ma\u00c3\u00b1ana",
-            "Grupo": [],
+            "Horario": "Ma\u00f1ana",
+            "Grupo": [
+                {
+                    "ID": "7777",
+                    "Nombre": "Aura Camila",
+                    "Apellido": "Pico",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "9999",
+                    "Nombre": "Juan",
+                    "Apellido": "Santo",
+                    "Ruta": "Sin asignar"
+                }
+            ],
             "Ruta": "Java",
             "Skills": [
                 "Intro",
@@ -24,7 +37,68 @@
         {
             "Nombre": "Sputnik",
             "Horario": "Tarde",
-            "Grupo": [],
+            "Grupo": [
+                {
+                    "ID": "1024",
+                    "Nombre": "Ana Maria",
+                    "Apellido": "Gomez Sanchez",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1026",
+                    "Nombre": "Laura Sofia",
+                    "Apellido": "Perez Rodriguez",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1028",
+                    "Nombre": "Maria Paula",
+                    "Apellido": "Sanchez Diaz",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1030",
+                    "Nombre": "Valentina",
+                    "Apellido": "Perez Gomez",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1032",
+                    "Nombre": "Camila",
+                    "Apellido": "Sanchez Perez",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1034",
+                    "Nombre": "Isabella",
+                    "Apellido": "Rodriguez Sanchez",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1036",
+                    "Nombre": "Valeria",
+                    "Apellido": "Garcia Diaz",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "1038",
+                    "Nombre": "Mariana",
+                    "Apellido": "Diaz Rodriguez",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "5555",
+                    "Nombre": "Jhon Stiven",
+                    "Apellido": "Negron Regalado",
+                    "Ruta": ""
+                },
+                {
+                    "ID": "7891",
+                    "Nombre": "Anna Sophia",
+                    "Apellido": "Heredia Gomez",
+                    "Ruta": "Sin asignar"
+                }
+            ],
             "Ruta": "NodeJS",
             "Skills": [
                 "Intro",
@@ -36,17 +110,16 @@
                 "Intro Back",
                 "Intro BBDD",
                 "MongoDB",
-                "JavaScript",
                 "MySQL",
                 "Express"
             ],
             "Trainer": {}
         },
         {
-            "Nombre": "Apollo",
-            "Horario": "Ma\u00c3\u00b1ana",
+            "Nombre": "Apolo",
+            "Horario": "Tarde",
             "Grupo": [],
-            "Ruta": "NetCore",
+            "Ruta": "Java",
             "Skills": [
                 "Intro",
                 "Python",
