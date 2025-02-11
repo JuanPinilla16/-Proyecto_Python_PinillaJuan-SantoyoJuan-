@@ -10,7 +10,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "RutaJava",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -23,7 +23,7 @@
             "Estado": "Admitido",
             "Ruta": "RutaNodeJS",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -36,7 +36,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "Ruta.NET",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -49,7 +49,7 @@
             "Estado": "Admitido",
             "Ruta": "RutaJava",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -62,7 +62,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "RutaNodeJS",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -75,7 +75,7 @@
             "Estado": "Admitido",
             "Ruta": "Ruta.NET",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -88,7 +88,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "RutaJava",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -101,7 +101,7 @@
             "Estado": "Admitido",
             "Ruta": "RutaNodeJS",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -114,7 +114,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "Ruta.NET",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -127,7 +127,7 @@
             "Estado": "Admitido",
             "Ruta": "RutaJava",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -140,7 +140,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "RutaNodeJS",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -153,7 +153,7 @@
             "Estado": "Admitido",
             "Ruta": "Ruta.NET",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -166,7 +166,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "RutaJava",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -179,7 +179,7 @@
             "Estado": "Admitido",
             "Ruta": "RutaNodeJS",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -192,7 +192,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "Ruta.NET",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -205,7 +205,7 @@
             "Estado": "Admitido",
             "Ruta": "RutaJava",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Tarde"
         },
         {
@@ -218,7 +218,7 @@
             "Estado": "En proceso de ingreso",
             "Ruta": "RutaNodeJS",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": "Ma\u00c3\u00b1ana"
         },
         {
@@ -231,7 +231,7 @@
             "Estado": "Cursando",
             "Ruta": "",
             "Grupo": "",
-            "Notas":"",
+            "Notas": "",
             "Disponibilidad": ""
         }
     ]
