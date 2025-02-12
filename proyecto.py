@@ -115,7 +115,7 @@ def asignarCampersASalon(estudiantes, salones):
                     print(f"El salón {salon['Nombre']} ya tiene 33 estudiantes y no puede aceptar más.")
     guardarJSON_salones(salones)
     print("Estudiantes asignados a los salones exitosamente.")
-    
+
 def asignarTrainerASalon(trainers, salones):
     for trainer in trainers["trainers"]:
         for salon in salones["Salones"]:
@@ -260,7 +260,7 @@ while InicioDeTodo:
                                 Salones={}
                                 Salones=abrirJSON_salones()
                                 for salon in Salones["Salones"]:
-                                    for estudiante in salon["Estudiantes"]:
+                                    for estudiante in salon["Grupo"]:
                                         if estudiante["ID"]==ID:
                                             print("Salon:",salon["Nombre"])
                                             print("Horario:",salon["Horario"])
