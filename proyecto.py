@@ -1,6 +1,4 @@
 import json
-import json
-import json
 
 def abrirJSON_Campers():
     dicFinal={}
@@ -11,7 +9,7 @@ def abrirJSON_Campers():
 def guardarJSON_Campers(dic):
     with open("./campers.json",'w') as outFile:
         json.dump(dic,outFile)
-#########################################################################################################################################################################################################################################################################3
+
 def abrirJSON_Trainers():
     dicFinal={}
     with open("./trainers.json",'r') as openFile:
@@ -21,7 +19,7 @@ def abrirJSON_Trainers():
 def guardarJSON_Trainers(dic):
     with open("./trainers.json",'w') as outFile:
         json.dump(dic,outFile)
-#########################################################################################################################################################################################################################################################################
+
 def abrirJSON_salones():
     dicFinal={}
     with open("./salones.json",'r') as openFile:
@@ -31,7 +29,7 @@ def abrirJSON_salones():
 def guardarJSON_salones(dic):
     with open("./salones.json",'w') as outFile:
         json.dump(dic,outFile)
-#########################################################################################################################################################################################################################################################################
+
 def agregarEstudiante(estudiantes):
     nuevo_camper = {
         "ID": input("Ingrese el ID del estudiante: "),
@@ -40,11 +38,11 @@ def agregarEstudiante(estudiantes):
         "Direccion": input("Ingrese la dirección del estudiante: "),
         "Acudiente": input("Ingrese el nombre del acudiente: "),
         "Telefono": input("Ingrese el teléfono del estudiante: "),
-        "Estado": input("Ingrese el estado del estudiante ((En proceso de ingreso, Inscrito, Aprobado,Cursando, Graduado, Expulsado, Retirado): "),
+        "Estado": "sin asignar",
         "Ruta": "Sin asignar",
         "Grupo": input("Ingrese el grupo del estudiante(A,B,C)"),
         "Notas": "Sin asignar",
-        "Disponibilidad": input("Ingrese la disponibilidad del estudiante (Mañana, Tarde): ")}
+        "Horario": input("Ingrese el Horario del estudiante (Mañana, Tarde): ")}
     estudiantes["estudiantes"].append(nuevo_camper)
     guardarJSON_Campers(estudiantes)
     print("Estudiante agregado exitosamente.")
@@ -58,7 +56,7 @@ def quitarEstudiante(estudiantes):
             print("Estudiante eliminado exitosamente.")
             return
     print("Estudiante no encontrado.")
-#########################################################################################################################################################################################################################################################################
+
 def agregarTrainer(trainers):
     nuevo_trainer = {
         "ID": input("Ingrese el ID del trainer: "),
@@ -79,7 +77,7 @@ def quitarTrainer(trainers):
             print("Trainer eliminado exitosamente.")
             return
     print("Trainer no encontrado.")
-#########################################################################################################################################################################################################################################################################
+
 def NuevoSalon(nombre, horario, ruta):
     return {
         "Nombre": nombre,
@@ -98,24 +96,26 @@ def EliminarSalon(salones, nombre):
             print("Salón eliminado exitosamente.")
             return
     print("Salón no encontrado.")
-#########################################################################################################################################################################################################################################################################
+
 def asignarCampersASalon(estudiantes, salones):
     for estudiante in estudiantes["estudiantes"]:
         for salon in salones["Salones"]:
-            if estudiante["Disponibilidad"] == salon["Horario"]:
-                salon["Grupo"].append({
-                "ID": estudiante["ID"],
-                "Nombre": estudiante["Nombres"],
-                "Apellido": estudiante["Apellidos"],
-                "Ruta": estudiante["Ruta"]})
-                break
+            if estudiante["Horario"] == salon["Horario"] and estudiante["Ruta"] == salon["Ruta"]:
+                if len(salon["Grupo"]) < 33:
+                    salon["Grupo"].append({
+                        "ID": estudiante["ID"],
+                        "Nombre": estudiante["Nombres"],
+                        "Apellido": estudiante["Apellidos"],
+                        "Ruta": estudiante["Ruta"],
+                        "Grupo": estudiante["Grupo"].replace("Sin asignar", salon["Nombre"])
+                    })
+                    guardarJSON_Campers(estudiantes)
+                    break
+                else:
+                    print(f"El salón {salon['Nombre']} ya tiene 33 estudiantes y no puede aceptar más.")
     guardarJSON_salones(salones)
     print("Estudiantes asignados a los salones exitosamente.")
-
-def guardarJSON_salones(dic):
-    with open("./salones.json",'w') as outFile:
-        json.dump(dic,outFile)
-
+    
 def asignarTrainerASalon(trainers, salones):
     for trainer in trainers["trainers"]:
         for salon in salones["Salones"]:
@@ -129,7 +129,7 @@ def asignarTrainerASalon(trainers, salones):
                 break
     guardarJSON_salones(salones)
     print("Trainer asignado a los salones exitosamente.")
-#########################################################################################################################################################################################################################################################################
+
 def vaciarSalones(salones):
     for salon in salones["Salones"]:
         salon["Grupo"] = []
@@ -148,7 +148,7 @@ def verSalones(salones):
             print("  Nombre:", estudiante["Nombre"])
             print("  Apellido:", estudiante["Apellido"])
         print("------------------------------------------------------")
-#########################################################################################################################################################################################################################################################################
+
 def CampersInscritos(estudiantes):
     for i in range(len(estudiantes["estudiantes"])):
         if estudiantes["estudiantes"][i]["Estado"]=="Inscrito":
@@ -156,9 +156,8 @@ def CampersInscritos(estudiantes):
             print("ID:",estudiantes["estudiantes"][i]["ID"])
             print("Ruta:",estudiantes["estudiantes"][i]["Ruta"])
             print("Grupo:",estudiantes["estudiantes"][i]["Grupo"])
-            print("Disponibilidad:",estudiantes["estudiantes"][i]["Disponibilidad"])
+            print("Horario:",estudiantes["estudiantes"][i]["Horario"])
             print("Estado:",estudiantes["estudiantes"][i]["Estado"])
-            
             print("\n")
 
 def CampersAprobados(estudiantes):
@@ -168,11 +167,10 @@ def CampersAprobados(estudiantes):
             print("ID:",estudiantes["estudiantes"][i]["ID"])
             print("Ruta:",estudiantes["estudiantes"][i]["Ruta"])
             print("Grupo:",estudiantes["estudiantes"][i]["Grupo"])
-            print("Disponibilidad:",estudiantes["estudiantes"][i]["Disponibilidad"])
+            print("Horario:",estudiantes["estudiantes"][i]["Horario"])
             print("Estado:",estudiantes["estudiantes"][i]["Estado"])
-            
             print("\n")
-#########################################################################################################################################################################################################################################################################
+
 def NotasDelCamper(teorica,practica,trabajos):
     porcentaje_teorica=teorica*0.30
     porcentaje_practica=practica*0.60
@@ -180,6 +178,11 @@ def NotasDelCamper(teorica,practica,trabajos):
     notaFinal=porcentaje_teorica+porcentaje_practica+porcentaje_trabajos
     return notaFinal
 
+def pruebadeingreso(teorica,practica):
+    porcentaje_teorica=teorica*0.30
+    porcentaje_practica=practica*0.60
+    PruebadeingresoFinal=porcentaje_teorica+porcentaje_practica
+    return PruebadeingresoFinal
 ###########################################################################################################################################################################################################################################################################
 InicioDeTodo=True
 while InicioDeTodo:
@@ -207,7 +210,7 @@ while InicioDeTodo:
                 Ruta="Sin asignar"
                 Grupo="Sin asignar"
                 Notas="Sin asignar"
-                Disponibilidad=input("Disponibilidad (Mañana, Tarde): ")
+                Horario=input("Horario (Mañana, Tarde): ")
                 Estudiantes["estudiantes"].append({
                     "ID":ID,
                     "Nombres":Nombres,
@@ -219,7 +222,7 @@ while InicioDeTodo:
                     "Ruta":Ruta,
                     "Grupo":Grupo,
                     "Notas":Notas,
-                    "Disponibilidad":Disponibilidad})
+                    "Horario":Horario})
                 guardarJSON_Campers(Estudiantes)
                 break
             elif registro==2:                    
@@ -257,7 +260,7 @@ while InicioDeTodo:
                                 Salones={}
                                 Salones=abrirJSON_salones()
                                 for salon in Salones["Salones"]:
-                                    for estudiante in salon["Grupo"]:
+                                    for estudiante in salon["Estudiantes"]:
                                         if estudiante["ID"]==ID:
                                             print("Salon:",salon["Nombre"])
                                             print("Horario:",salon["Horario"])
@@ -267,7 +270,6 @@ while InicioDeTodo:
                                 inicioCamp=False
                                 print("Hasta luego")
     ############################################################################################################################################################
-
         elif usuario==2:
             Trainers={}
             Trainers=abrirJSON_Trainers()
@@ -308,7 +310,7 @@ while InicioDeTodo:
                                 print("Ruta:",Estudiantes["estudiantes"][i]["Ruta"])
                                 print("Grupo:",Estudiantes["estudiantes"][i]["Grupo"])
                                 print("Notas:",Estudiantes["estudiantes"][i]["Notas"])
-                                print("Disponibilidad:",Estudiantes["estudiantes"][i]["Disponibilidad"])
+                                print("Horario:",Estudiantes["estudiantes"][i]["Horario"])
                         elif opcion==2:
                             verSalones(Salones)
                         elif opcion==3:
@@ -371,7 +373,9 @@ while InicioDeTodo:
             print("------------------------------------------------------")
             print("16. Campers que pasaron y Campers que perdieron ")
             print("------------------------------------------------------")
-            print("17. Salir")
+            print("17. prueba de ingreso")
+            print("------------------------------------------------------")
+            print("18. Salir")
             print("------------------------------------------------------")
             opcion=int(input("\n¿Qué desea hacer?: "))
             Estudiantes={}
@@ -393,7 +397,7 @@ while InicioDeTodo:
                     print("Ruta:",Estudiantes["estudiantes"][i]["Ruta"])
                     print("Grupo:",Estudiantes["estudiantes"][i]["Grupo"])
                     print("Notas:",Estudiantes["estudiantes"][i]["Notas"])
-                    print("Disponibilidad:",Estudiantes["estudiantes"][i]["Disponibilidad"])
+                    print("Horario:",Estudiantes["estudiantes"][i]["Horario"])
 
             elif opcion==2:
                 for i in range(len(Trainers["trainers"])):
@@ -450,7 +454,7 @@ while InicioDeTodo:
                         print("ID:",Estudiantes["estudiantes"][i]["ID"])
                         print("Ruta:",Estudiantes["estudiantes"][i]["Ruta"])
                         print("Grupo:",Estudiantes["estudiantes"][i]["Grupo"])
-                        print("Disponibilidad:",Estudiantes["estudiantes"][i]["Disponibilidad"])
+                        print("Horario:",Estudiantes["estudiantes"][i]["Horario"])
                         print("Estado:",Estudiantes["estudiantes"][i]["Estado"])
                         print("Notas:",Estudiantes["estudiantes"][i]["Notas"])
                         print("\n")
@@ -468,6 +472,23 @@ while InicioDeTodo:
                 print("Campers que perdieron:",rendimientoBajo)
 
             elif opcion==17:
+                print("Ingrese el ID del camper")
+                ID=input("ID: ")
+                for estudiante in Estudiantes["estudiantes"]:
+                    if estudiante["ID"]==ID:
+                        print("Ingrese la nota de la prueba teórica")
+                        teorica=float(input("Nota: "))
+                        print("Ingrese la nota de la prueba práctica")
+                        practica=float(input("Nota: "))
+                        PruebadeingresoFinal=pruebadeingreso(teorica,practica)
+                        if PruebadeingresoFinal>=60:
+                            estudiante["Estado"]="Aprobado"
+                        else:
+                            estudiante["Estado"]="En proceso de ingreso"
+                    
+                else:
+                    print("No pasó")
+            elif opcion==18:
                 inicio=False
                 print("Hasta luego")
             else:
