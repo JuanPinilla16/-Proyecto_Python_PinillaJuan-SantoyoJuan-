@@ -40,7 +40,7 @@ def agregarEstudiante(estudiantes):
         "Telefono": input("Ingrese el teléfono del estudiante: "),
         "Estado": "sin asignar",
         "Ruta": "Sin asignar",
-        "Grupo": input("Ingrese el grupo del estudiante(A,B,C)"),
+        "Grupo": "Sin asignar",
         "Notas": "Sin asignar",
         "Horario": input("Ingrese el Horario del estudiante (Mañana, Tarde): ")}
     estudiantes["estudiantes"].append(nuevo_camper)
@@ -99,18 +99,19 @@ def EliminarSalon(salones, nombre):
 
 def asignarCampersASalon(estudiantes, salones):
     for estudiante in estudiantes["estudiantes"]:
+
         for salon in salones["Salones"]:
             if estudiante["Horario"] == salon["Horario"] and estudiante["Ruta"] == salon["Ruta"]:
-                if len(salon["Grupo"]) < 33:
+                if len(salon["Grupo"]) <= 33:
                     salon["Grupo"].append({
                         "ID": estudiante["ID"],
                         "Nombre": estudiante["Nombres"],
                         "Apellido": estudiante["Apellidos"],
                         "Ruta": estudiante["Ruta"],
-                        "Grupo": estudiante["Grupo"].replace("Sin asignar", salon["Nombre"])
+                        "Grupo": estudiante["Grupo"]
                     })
+                    estudiante["Grupo"] = salon["Nombre"]
                     guardarJSON_Campers(estudiantes)
-                    break
                 else:
                     print(f"El salón {salon['Nombre']} ya tiene 33 estudiantes y no puede aceptar más.")
     guardarJSON_salones(salones)
