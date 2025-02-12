@@ -3,29 +3,7 @@
         {
             "Nombre": "Artemis",
             "Horario": "Ma\u00c3\u00b1ana",
-            "Grupo": [
-                {
-                    "ID": "1023",
-                    "Nombre": "Juan Carlos",
-                    "Apellido": "Rodriguez Perez",
-                    "Ruta": "Java",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "1029",
-                    "Nombre": "David Alejandro",
-                    "Apellido": "Rodriguez Hernandez",
-                    "Ruta": "Java",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "1035",
-                    "Nombre": "Samuel",
-                    "Apellido": "Perez Hernandez",
-                    "Ruta": "Java",
-                    "Grupo": ""
-                }
-            ],
+            "Grupo": [],
             "Ruta": "Java",
             "Skills": [],
             "Trainer": {}
@@ -33,85 +11,7 @@
         {
             "Nombre": "Sputnik",
             "Horario": "Tarde",
-            "Grupo": [
-                {
-                    "ID": "1024",
-                    "Nombre": "Ana Maria",
-                    "Apellido": "Gomez Sanchez",
-                    "Ruta": "NodeJS",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "1030",
-                    "Nombre": "Valentina",
-                    "Apellido": "Perez Gomez",
-                    "Ruta": "NodeJS",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "1036",
-                    "Nombre": "Valeria",
-                    "Apellido": "Garcia Diaz",
-                    "Ruta": "NodeJS",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "4502",
-                    "Nombre": "Luisa",
-                    "Apellido": "Rojas",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4508",
-                    "Nombre": "Elena",
-                    "Apellido": "Ram\u00edrez",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4514",
-                    "Nombre": "Patricia",
-                    "Apellido": "Mora",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4520",
-                    "Nombre": "Samuel",
-                    "Apellido": "Hernandez",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4522",
-                    "Nombre": "Lucia",
-                    "Apellido": "Garcia",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4528",
-                    "Nombre": "Ana",
-                    "Apellido": "V\u00e1zquez",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4534",
-                    "Nombre": "Sof\u00eda",
-                    "Apellido": "Ram\u00edrez",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4540",
-                    "Nombre": "Sebasti\u00e1n",
-                    "Apellido": "Paredes",
-                    "Ruta": "NodeJS",
-                    "Grupo": "Sin asignar"
-                }
-            ],
+            "Grupo": [],
             "Ruta": "NodeJS",
             "Skills": [],
             "Trainer": {}
@@ -119,64 +19,7 @@
         {
             "Nombre": "Apolo",
             "Horario": "Tarde",
-            "Grupo": [
-                {
-                    "ID": "1028",
-                    "Nombre": "Maria Paula",
-                    "Apellido": "Sanchez Diaz",
-                    "Ruta": "NetCore",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "1034",
-                    "Nombre": "Isabella",
-                    "Apellido": "Rodriguez Sanchez",
-                    "Ruta": "NetCore",
-                    "Grupo": ""
-                },
-                {
-                    "ID": "4506",
-                    "Nombre": "Mar\u00eda",
-                    "Apellido": "Lopez",
-                    "Ruta": "NetCore",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4512",
-                    "Nombre": "Carmen",
-                    "Apellido": "Salazar",
-                    "Ruta": "NetCore",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4518",
-                    "Nombre": "Pedro",
-                    "Apellido": "Ramirez",
-                    "Ruta": "NetCore",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4526",
-                    "Nombre": "Carla",
-                    "Apellido": "Ruiz",
-                    "Ruta": "NetCore",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4532",
-                    "Nombre": "Martina",
-                    "Apellido": "L\u00f3pez",
-                    "Ruta": "NetCore",
-                    "Grupo": "Sin asignar"
-                },
-                {
-                    "ID": "4538",
-                    "Nombre": "Mario",
-                    "Apellido": "Vega",
-                    "Ruta": "NetCore",
-                    "Grupo": "Sin asignar"
-                }
-            ],
+            "Grupo": [],
             "Ruta": "NetCore",
             "Skills": [],
             "Trainer": {}
@@ -185,29 +28,7 @@
             "Nombre": "Jupiter",
             "Horario": "Ma\u00c3\u00b1ana",
             "Ruta": "Java",
-            "Grupo": [
-                {
-                    "ID": "1023",
-                    "Nombre": "Juan Carlos",
-                    "Apellido": "Rodriguez Perez",
-                    "Ruta": "Java",
-                    "Grupo": "Artemis"
-                },
-                {
-                    "ID": "1029",
-                    "Nombre": "David Alejandro",
-                    "Apellido": "Rodriguez Hernandez",
-                    "Ruta": "Java",
-                    "Grupo": "Artemis"
-                },
-                {
-                    "ID": "1035",
-                    "Nombre": "Samuel",
-                    "Apellido": "Perez Hernandez",
-                    "Ruta": "Java",
-                    "Grupo": "Artemis"
-                }
-            ],
+            "Grupo": [],
             "Trainer": {},
             "Skills": []
         }

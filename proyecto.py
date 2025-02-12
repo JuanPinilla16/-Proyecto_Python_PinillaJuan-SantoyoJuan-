@@ -99,10 +99,9 @@ def EliminarSalon(salones, nombre):
 
 def asignarCampersASalon(estudiantes, salones):
     for estudiante in estudiantes["estudiantes"]:
-
         for salon in salones["Salones"]:
             if estudiante["Horario"] == salon["Horario"] and estudiante["Ruta"] == salon["Ruta"]:
-                if len(salon["Grupo"]) <= 33:
+                if len(salon["Grupo"]) < 33:
                     salon["Grupo"].append({
                         "ID": estudiante["ID"],
                         "Nombre": estudiante["Nombres"],
@@ -312,8 +311,10 @@ while InicioDeTodo:
                                 print("Grupo:",Estudiantes["estudiantes"][i]["Grupo"])
                                 print("Notas:",Estudiantes["estudiantes"][i]["Notas"])
                                 print("Horario:",Estudiantes["estudiantes"][i]["Horario"])
+
                         elif opcion==2:
                             verSalones(Salones)
+
                         elif opcion==3:
                             print("Ingrese el ID del camper")
                             ID=input("ID: ")
