@@ -6,7 +6,7 @@
 
 # Archivos
 | Nombre | Explicacion |
-| -------------------- |
+| -------- | ----------- |
 | `campers.json` | Este es el diccionario de los campers |
 | `proyecto.py` | Este es el codigo principal el cual tiene las funciones y opciones de cada usuario |
 | `salones.json` | Este es el diccionario de los salones |
